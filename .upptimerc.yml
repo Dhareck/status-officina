@@ -1,31 +1,139 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Pagina di stato dei servizi dell'Officina Tecnologica
+# Documentazione: https://upptime.js.org/docs/configuration/
+owner: Dhareck
+repo: status-officina
+user-agent: Dhareck
+
+# Riceve le notifiche GitHub quando si apre un incidente
+assignees:
+  - Dhareck
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Sito dell'officina
+    slug: sito
+    url: https://officinatecnologica.eu
+    maxResponseTime: 10000
+  - name: Forgejo
+    slug: forgejo
+    url: https://git.officinatecnologica.eu/api/healthz
+    maxResponseTime: 10000
+  - name: Chat Matrix
+    slug: matrix
+    url: https://matrix.officinatecnologica.eu/_matrix/client/versions
+    maxResponseTime: 10000
+  - name: BananaWiki
+    slug: bananawiki
+    url: https://officina.bananawiki.com/login
+    maxResponseTime: 10000
+  - name: BananaWiki Hosting Platform
+    slug: hosting
+    url: https://hosting.bananawiki.com/login
+    maxResponseTime: 10000
+  - name: BananaChat
+    slug: bananachat
+    url: https://chat.bananawiki.com/login
+    maxResponseTime: 10000
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.officinatecnologica.eu
+  name: Officina Tecnologica · Stato dei servizi
+  logoUrl: https://status.officinatecnologica.eu/logo.png
+  favicon: https://status.officinatecnologica.eu/logo.png
+  theme: dark
+  introTitle: "**Stato dei servizi** dell'Officina Tecnologica"
+  introMessage: "Controllo automatico circa ogni 5 minuti di sito, Forgejo, chat Matrix e BananaSuite. Se un servizio risulta non disponibile, l'incidente compare qui sotto finché non viene risolto."
   navbar:
-    - title: Status
+    - title: Stato
       href: /
+    - title: Sito dell'officina
+      href: https://officinatecnologica.eu
+    - title: Servizi interni
+      href: https://officinatecnologica.eu/servizi.html
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
+  # Colori allineati al sito officinatecnologica.eu
+  css: ":root{--body-background-color:#0b1017;--body-text-color:#e8edf8;--card-background-color:#111a29;--nav-background-color:#111a29;--nav-border-bottom-color:#232e48;--nav-current-border-bottom-color:#4f8cff;--card-border-color:#232e48;--tag-color:#07122b;--error-button-border-color:#4f8cff;--error-button-background-color:#4f8cff;--error-button-color:#07122b;--submit-button-border-color:#4f8cff;--submit-button-background-color:#4f8cff;--submit-button-color:#07122b}"
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+graphBackgroundColor: "#1a2a4d"
+graphBorderColor: "#4f8cff"
+
+i18n:
+  locale: "it-IT"
+  activeIncidents: "Incidenti in corso"
+  allSystemsOperational: "Tutti i servizi sono operativi"
+  incidentReport: "Rapporto incidente #$NUMBER →"
+  activeIncidentSummary: "Aperto il $DATE con $POSTS aggiornamenti"
+  incidentTitle: "Dettagli incidente $NUMBER"
+  incidentDetails: "Dettagli dell'incidente"
+  incidentFixed: "Risolto"
+  incidentOngoing: "In corso"
+  incidentOpenedAt: "Aperto il"
+  incidentClosedAt: "Chiuso il"
+  incidentViewOnGitHub: "Visualizza e segui su GitHub"
+  incidentCommentSummary: "Pubblicato il $DATE da $AUTHOR"
+  incidentBack: "← Torna a tutti gli incidenti"
+  pastIncidents: "Incidenti passati"
+  pastIncidentsResolved: "Risolto in $MINUTES minuti con $POSTS aggiornamenti"
+  liveStatus: "Stato in tempo reale"
+  overallUptime: "Disponibilità complessiva: $UPTIME"
+  overallUptimeTitle: "Disponibilità complessiva"
+  averageResponseTime: "Tempo di risposta medio: $TIMEms"
+  averageResponseTimeTitle: "Risposta media"
+  sevelDayResponseTime: "Tempo di risposta negli ultimi 7 giorni"
+  responseTimeMs: "Tempo di risposta (ms)"
+  up: "Operativo"
+  down: "Non disponibile"
+  degraded: "Prestazioni ridotte"
+  ms: "ms"
+  loading: "Caricamento"
+  navGitHub: "GitHub"
+  footer: "Questa pagina è [open source]($REPO) e funziona con [Upptime](https://upptime.js.org)"
+  rateLimitExceededTitle: "Limite di richieste superato"
+  rateLimitExceededIntro: "Hai superato il numero di richieste consentite in un'ora: dovrai attendere prima di poter accedere di nuovo a questo sito. In alternativa, puoi aggiungere un Personal Access Token di GitHub per continuare a usarlo."
+  rateLimitExceededWhatDoesErrorMean: "Che cosa significa questo errore?"
+  rateLimitExceededErrorMeaning: "Questo sito usa l'API di GitHub per ottenere in tempo reale i dati sullo stato dei servizi. Per impostazione predefinita GitHub consente 60 richieste all'ora per ogni indirizzo IP, e le hai esaurite."
+  rateLimitExceededErrorHowCanFix: "Come posso risolvere?"
+  rateLimitExceededErrorFix: "Puoi attendere un'ora: il limite del tuo indirizzo IP verrà ripristinato. In alternativa, puoi aggiungere il tuo Personal Access Token di GitHub, che ti offre 5.000 richieste in più all'ora."
+  rateLimitExceededGeneratePAT: "Scopri come generare un Personal Access Token"
+  rateLimitExceededHasSet: "Hai impostato un Personal Access Token."
+  rateLimitExceededRemoveToken: "Rimuovi il token"
+  rateLimitExceededGitHubPAT: "Personal Access Token di GitHub"
+  rateLimitExceededCopyPastePAT: "Copia e incolla il tuo token"
+  rateLimitExceededSaveToken: "Salva il token"
+  errorTitle: "Si è verificato un errore"
+  errorIntro: "Si è verificato un errore durante il recupero dei dati aggiornati sullo stato."
+  errorText: "Riprova tra qualche istante."
+  errorHome: "Torna alla home page"
+  pastScheduledMaintenance: "Manutenzioni programmate passate"
+  scheduledMaintenance: "Manutenzione programmata"
+  scheduledMaintenanceSummaryStarted: "Iniziata il $DATE, durata $DURATION minuti"
+  scheduledMaintenanceSummaryStarts: "Inizia il $DATE, durata $DURATION minuti"
+  startedAt: "Iniziata il"
+  startsAt: "Inizia il"
+  duration: "Durata"
+  durationMin: "$DURATION minuti"
+  incidentCompleted: "Completata"
+  incidentScheduled: "Programmata"
+  duration24H: "24 ore"
+  duration7D: "7 giorni"
+  duration30D: "30 giorni"
+  duration1Y: "1 anno"
+  durationAll: "Tutto"
+  # Testi usati solo nel README del repository
+  url: "URL"
+  status: "Stato"
+  history: "Cronologia"
+  responseTime: "Tempo di risposta"
+  responseTimeDay: "Tempo di risposta 24 ore"
+  responseTimeWeek: "Tempo di risposta 7 giorni"
+  responseTimeMonth: "Tempo di risposta 30 giorni"
+  responseTimeYear: "Tempo di risposta 1 anno"
+  uptime: "Disponibilità"
+  uptimeDay: "Disponibilità 24 ore"
+  uptimeWeek: "Disponibilità 7 giorni"
+  uptimeMonth: "Disponibilità 30 giorni"
+  uptimeYear: "Disponibilità 1 anno"
+  responseTimeGraphAlt: "Grafico del tempo di risposta"
+  degradedPerformance: "🟨 Prestazioni ridotte"
+  completeOutage: "🟥 Interruzione totale"
+  partialOutage: "🟧 Interruzione parziale"
