@@ -76,18 +76,20 @@
     "url": "https://hosting.bananawiki.com/login",
     "icon": "https://icons.duckduckgo.com/ip3/hosting.bananawiki.com.ico",
     "slug": "hosting",
-    "status": "up",
+    "status": "degraded",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 561,
-    "timeDay": 631,
-    "timeWeek": 690,
-    "timeMonth": 561,
-    "timeYear": 561,
-    "dailyMinutesDown": {}
+    "time": 1520,
+    "timeDay": 10188,
+    "timeWeek": 3072,
+    "timeMonth": 1520,
+    "timeYear": 1520,
+    "dailyMinutesDown": {
+      "2026-10-29": 0
+    }
   },
   {
     "name": "BananaChat",
