@@ -76,20 +76,20 @@
     "url": "https://hosting.bananawiki.com/login",
     "icon": "https://icons.duckduckgo.com/ip3/hosting.bananawiki.com.ico",
     "slug": "hosting",
-    "status": "degraded",
-    "uptime": "98.92%",
-    "uptimeDay": "95.30%",
-    "uptimeWeek": "96.41%",
-    "uptimeMonth": "98.92%",
-    "uptimeYear": "98.92%",
-    "time": 3076,
-    "timeDay": 46714,
-    "timeWeek": 7830,
-    "timeMonth": 3076,
-    "timeYear": 3076,
+    "status": "up",
+    "uptime": "98.10%",
+    "uptimeDay": "75.89%",
+    "uptimeWeek": "93.63%",
+    "uptimeMonth": "98.10%",
+    "uptimeYear": "98.10%",
+    "time": 2981,
+    "timeDay": 23609,
+    "timeWeek": 7097,
+    "timeMonth": 2981,
+    "timeYear": 2981,
     "dailyMinutesDown": {
       "2026-10-29": 295,
-      "2026-11-03": 68
+      "2026-11-03": 347
     }
   },
   {
