@@ -1,6 +1,6 @@
 # [📈 Stato in tempo reale](https://status.officinatecnologica.eu): <!--live status--> **Tutti i servizi sono operativi**
 
-This repository contains the open-source uptime monitor and status page for [Dhareck](https://status.officinatecnologica.eu), powered by [Upptime](https://github.com/upptime/upptime).
+This repository contains the open-source uptime monitor and status page for [Officina Tecnologica](https://status.officinatecnologica.eu), powered by [Upptime](https://github.com/upptime/upptime).
 
 [![Uptime CI](https://github.com/OfficinaTecnologica/status-officina/workflows/Uptime%20CI/badge.svg)](https://github.com/OfficinaTecnologica/status-officina/actions/workflows/uptime.yml)
 [![Response Time CI](https://github.com/OfficinaTecnologica/status-officina/workflows/Response%20Time%20CI/badge.svg)](https://github.com/OfficinaTecnologica/status-officina/actions/workflows/response-time.yml)
@@ -8,7 +8,7 @@ This repository contains the open-source uptime monitor and status page for [Dha
 [![Static Site CI](https://github.com/OfficinaTecnologica/status-officina/workflows/Static%20Site%20CI/badge.svg)](https://github.com/OfficinaTecnologica/status-officina/actions/workflows/site.yml)
 [![Summary CI](https://github.com/OfficinaTecnologica/status-officina/workflows/Summary%20CI/badge.svg)](https://github.com/OfficinaTecnologica/status-officina/actions/workflows/summary.yml)
 
-With [Upptime](https://upptime.js.org), you can get your own unlimited and free uptime monitor and status page, powered entirely by a GitHub repository. We use [Issues](https://github.com/Dhareck/status-officina/issues) as incident reports, [Actions](https://github.com/Dhareck/status-officina/actions) as uptime monitors, and [Pages](https://status.officinatecnologica.eu) for the status page.
+With [Upptime](https://upptime.js.org), you can get your own unlimited and free uptime monitor and status page, powered entirely by a GitHub repository. We use [Issues](https://github.com/OfficinaTecnologica/status-officina/issues) as incident reports, [Actions](https://github.com/OfficinaTecnologica/status-officina/actions) as uptime monitors, and [Pages](https://status.officinatecnologica.eu) for the status page.
 
 ## [📈 Live Status](https://demo.upptime.js.org): <!--live status--> **Tutti i servizi sono operativi**
 
